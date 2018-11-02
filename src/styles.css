@@ -1,9 +1,2 @@
 /* You can add global styles to this file, and also import other style files */
 
-/* General styles and structuring */
-@import "assets/css/general.less";
-@import "assets/css/colors.less";
-@import "assets/css/fonts.less";
-
-/* Home */
-@import "assets/css/home.less";
