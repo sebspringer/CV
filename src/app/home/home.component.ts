@@ -1,14 +1,31 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html'
 })
-export class HomeComponent implements OnInit {
 
-  constructor() { }
+export class HomeComponent implements OnInit {
+  constructor (
+    private router: Router
+  ) {}
 
   ngOnInit() {
+  }
+
+  onSwipeLeft() {
+    // this.router.navigate(['/work']);
+    console.log('swiping left');
+  }
+
+  onSwipeRight() {
+    // this.router.navigate(['/about']);
+    console.log('swiping right');
+  }
+
+  onSwipeUp() {
+    console.log('show me');
   }
 
 }
